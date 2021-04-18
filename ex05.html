@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de loop</title>
+</head>
+<body>
+    <h1>declaração for/in</h1>
+    <script>
+        var carro = { 
+            marca: "Renault",  // foram definidas 5 propriedade desses objeto carro
+            modelo: "Logan",
+            comprimento: "4.250mm",
+            largura: "1.735mm",
+            altura: "1.525mm",
+        };
+        var msg = "", k;
+        for(k in carro){
+            msg += k + ": " + carro[k] + "\n";
+        }
+        alert(`O carro tem as seguinte características: \n${msg}`);
+    </script>
+    
+</body>
+</html>

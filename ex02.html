@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Obrigado por seguir as regras deste site</h1>
+    <script>
+var x = prompt("Entre com um número maior que 0 e menor que 11", "");
+try{
+    if (x<=0){
+        throw("erro1"); 
+    }
+    if(x>=11){
+        throw("erro2");
+    }
+    if(isNaN(parseInt(x))){
+        throw("erro3");
+    }
+} catch (e){
+  if(e=="erro1"){
+      alert("O numero deve ser maior que 0");
+  }
+  if(e=="erro2"){
+      alert("O numero deve ser menor que 11");
+  }
+  if(e=="erro3"){
+      alert("Entre somente com numero maior que 0 e menor que 11");
+  
+}
+}
+
+    </script>
+    
+</body>
+</html>
